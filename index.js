@@ -5,13 +5,13 @@ var chalk = require('chalk');
 
 var net = new brain.NeuralNetwork();
 
-
+// add bigger dummy data via json
 net.train([{input: { r: 0, g: 0, b: 0 }, output: { white: 1 }},
            {input: { r: 59, g: 59, b: 59 }, output: { white: 1 }},
            {input: { r: 255, g: 255, b: 255 }, output: { black: 1 }}]);
 		   
 
-
+// this came straight from brain.js
 var options = {
                             // Defaults values --> expected validation
       iterations: 20000,    // the maximum times to iterate the training data --> number greater than 0
@@ -28,7 +28,7 @@ var options = {
 		   
 function entry(){
 	console.log('What would you like to do?\n - exit\n -  train\n -  ask\n - random')
-	prompt.get(['input'], function (err, result) {
+	prompt.get(['input'], function(err, result) {
 		
 		if(result.input=='exit'){
 			process.exit()
