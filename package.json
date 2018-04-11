@@ -1,0 +1,12 @@
+{
+  "name": "nerual-dawg",
+  "version": "1.0.0",
+  "description": "Messing around with neural networks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node index.js"
+  },
+  "author": "Chewdawg",
+  "license": "ISC"
+}
