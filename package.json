@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
+    "start": "node index.js"
   },
   "author": "Chewdawg",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "brain.js": "^1.1.2",
+    "chalk": "^2.3.2",
+    "prompt": "^1.0.0"
+  }
 }
